@@ -1,0 +1,5 @@
+<!--pages/shujuku/shujuku.wxml-->
+<text>pages/shujuku/shujuku.wxml</text>
+<view wx:for="{{list}}">
+<view>温度：{{item.tem}}湿度：{{item.hum}}日期：{{item.day}}</view>
+</view>

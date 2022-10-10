@@ -1,0 +1,16 @@
+.pic{
+  text-align: center;
+  margin-top:20px;
+}
+
+.wendu{
+  margin-top:5px;
+}
+.light{
+  margin-top:30px;
+}
+
+.light2{
+  margin-top:30px;
+  text-align: center;
+}

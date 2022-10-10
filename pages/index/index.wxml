@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<view >
+
+  <view style="text-align:center;">
+    <span style="font-size:18px;">智能家居实时监控系统</span>
+    
+    <view>
+      
+    </view>
+  </view>
+  <van-cell title="设备状态" value="{{device_status}}" />
+  <van-cell title="温度" value="{{temperature}}度" />
+  <van-cell title="湿度" value="{{humidity}}%" />
+  <van-cell title="LED状态" value="{{led_status}}" />
+  <van-cell title="光线状态" value="{{light_status}}" />
+  <van-cell title="天气状态：" value="{{rain_status}}" />
+  <!--温湿度图片显示-->
+  <view class="pic">
+    <van-row>
+      <van-col span="12">
+        <van-icon size="60px" name="/utils/img/shidu.png" />
+      </van-col>
+      <van-col span="12">
+        <van-icon size="60px" name="/utils/img/wendu.png" />
+      </van-col>
+    </van-row>
+  </view>
+  <!--温湿度数值-->
+  <view class="wendu">
+    <van-row style="text-align:center;">
+      <van-col span="12">湿度：{{humidity}} %</van-col>
+      <van-col span="12">温度：{{temperature}} ℃</van-col>
+    </van-row>
+  </view>
+  <!--控制灯1-->
+  <view class="light">
+    <van-cell title="灯" icon="{{ledicon}}">
+      <van-switch checked="{{ checked }}" size="24px" bind:change="onchange" />
+    </van-cell>
+  </view>
+  <!-- 控制灯2 -->
+  <!-- <view class="light2">
+    <van-icon size="120px" name="{{ledicon}}" bind:click="onChange2" />
+  </view> -->
+</view>

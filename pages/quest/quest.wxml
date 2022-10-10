@@ -1,0 +1,17 @@
+<!--pages/quest/quest.wxml-->
+<text>{{quest}}</text>
+<view class="btns">
+  <van-button type="default" bindtap="onclick" data-que="htmlQuestion">html</van-button>
+  <van-button type="default" bindtap="onclick" data-que="jsQuestion">js</van-button>
+  <van-button type="default" bindtap="onclick" data-que="cssQuestion">css</van-button>
+  <van-button type="default" bindtap="onclick" data-que="vueQuestion">vue</van-button>
+  <van-button type="default" bindtap="onclick" data-que="netQuestion">计算机网络</van-button>
+  <van-button type="default" bindtap="onclick" data-que="browserQuestion">浏览器原理</van-button>
+  <van-button type="default" bindtap="showAnswer">答案</van-button>
+</view>
+<view hidden="{{status}}">
+  <text>{{answer}}</text>
+  <view wx:for="{{imgurl}}" wx:key="index">
+    <image mode="aspectFit" src="{{item}}" />
+  </view>
+</view>

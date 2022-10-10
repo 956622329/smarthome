@@ -1,0 +1,6 @@
+/* pages/quest/quest.wxss */
+.btns{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
